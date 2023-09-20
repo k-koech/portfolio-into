@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+button
+{
+    background-color: orangered;
+    padding: 5px 12px 5px 12px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+button:hover
+{
+    background-color: brown;
+    cursor: pointer;
+}
+/* NAVBAR */
+#navbar
+{
+    width: 90%;
+    margin: auto;
+    padding: 35px 3% 15px 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar a{
+    color: black;
+    margin-right: 10px;
+}
+
+#navbar a:hover
+{
+    color: orangered;
+}
+
+
+/* Landing Page */
+#landing-page
+{
+    height: 94vh;
+    width: 70vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* vertically align itemns */
+    /* justify-content: ; horizontally  align items */
+}
+#landing-page .column
+{
+    width: 50%;
+}
+#landing-page  img
+{
+    width: 100%;
+}
+
+
+/* Services */
+#services
+{
+    width: 70vw;
+    margin: auto;
+    min-height: 50vh;
+    padding: 30px;
+}
+#services .cards-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#services .cards-container .card
+{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid orange;
+    width: 30%;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+#services .cards-container .card i
+{
+    font-size: 40px;
+    color: orangered;
+}
+#services .cards-container .card p
+{
+    text-align: center;
+    font-size: smaller;
+}
+/* footer */
+footer
+{
+    background-color: rgb(1, 1, 26);
+    color: white;
+    padding: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+footer #row1
+{
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 35px;
+}
+
+footer .row2
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .row2 .icons
+{
+    display: flex;
+}
+
+footer .row2 .icons a
+{
+    color: white;
+    margin-left: 20px;
+}
+/* contact page */
+#contact
+{
+    display: flex;
+    width: 80%;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 10px;
+    min-height: 70vh;
+}
+#contact .column{
+    width: 50%;
+}
+#contact h1{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+#contact p{
+    margin: 6%;
+}
+
+/* RESPONSIVENESS */
+
+@media (min-width: 0px) and (max-width: 540px)
+{
+    /* navbar */
+    #navbar h1{
+        font-size: 16px;
+    }
+    #navbar a{
+        margin-right: 5px;
+    }
+    #navbar button{
+        display: none;
+    }
+
+    /* landing-page  */
+    #landing-page
+    {
+        width: 80vw;
+        flex-direction: column;
+        align-items: center; /* horizonta align itemns */
+        justify-content:space-evenly ;  /* vertically  align items */
+    }
+    #landing-page .column
+    {
+        width: 90%;
+    }
+
+    /* services */
+    /* Services */
+    #services
+    {
+        padding: 30px;
+    }
+    #services .cards-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services .cards-container .card
+    {
+        border: 1px solid rgb(180, 0, 0);
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    
+
+}
+
+
+/* @media (min-width:541px) and (max-width: 768px)
+{
+    button{
+        background-color: green;
+    }
+} */
+
